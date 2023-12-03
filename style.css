@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Cinzel&family=Comfortaa:wght@300&family=Gabarito&family=Lato&family=Montserrat:ital,wght@1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Poppins&family=Raleway:wght@200&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Cinzel&family=Comfortaa:wght@300&family=Dancing+Script&family=Gabarito&family=Lato&family=Montserrat:ital,wght@1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Poppins&family=Raleway:wght@200&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Cinzel&family=Comfortaa:wght@300&family=Dancing+Script&family=Gabarito&family=Lato&family=Montserrat:ital,wght@1,500&family=Open+Sans&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Poppins&family=Raleway:wght@200&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Cinzel&family=Comfortaa:wght@300&family=Dancing+Script:wght@400;700&family=Gabarito&family=Great+Vibes&family=Lato&family=Montserrat:ital,wght@1,500&family=Open+Sans&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Poppins&family=Raleway:wght@200&family=Roboto:wght@300&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Cinzel&family=Comfortaa:wght@300&family=Dancing+Script:wght@400;700&family=Gabarito&family=Great+Vibes&family=Lato&family=Montserrat:ital,wght@1,500&family=Open+Sans&family=Pacifico&family=Playpen+Sans:wght@600&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Poppins&family=Raleway:wght@200&family=Roboto:wght@300&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Cinzel&family=Comfortaa:wght@300&family=Dancing+Script:wght@400;700&family=Gabarito&family=Great+Vibes&family=Lato&family=Montserrat:ital,wght@1,500&family=Open+Sans&family=Pacifico&family=Permanent+Marker&family=Playpen+Sans:wght@600&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Poppins&family=Raleway:wght@200&family=Roboto:wght@300&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Cinzel&family=Comfortaa:wght@300&family=Dancing+Script:wght@400;700&family=Gabarito&family=Great+Vibes&family=Lato&family=Montserrat:ital,wght@1,500&family=Open+Sans&family=Pacifico&family=Permanent+Marker&family=Playpen+Sans:wght@600&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Poppins&family=Raleway:wght@200&family=Roboto:wght@300&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Cinzel&family=Comfortaa:wght@300&family=Dancing+Script:wght@400;700&family=Gabarito&family=Great+Vibes&family=Lato&family=Montserrat:ital,wght@1,500&family=Open+Sans&family=PT+Sans&family=Pacifico&family=Permanent+Marker&family=Playpen+Sans:wght@600&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Poppins&family=Raleway:wght@200&family=Satisfy&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: poppins;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgba(64, 27, 30, 0.607);
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+}
+
+.container img {
+    height: 50%;
+    width: 50%;
+    float: right;
+    margin-top: -0.5%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    position: fixed;
+    opacity: 1;
+    transform: none;
+    backdrop-filter: blur(2rem);
+    z-index: 100;
+    height: 5rem;
+}
+
+nav p {
+    margin-left: 0.8rem;
+    font-size: 2rem;
+}
+
+nav span {
+    font-family: Permanent Marker;
+}
+
+nav ul {
+    list-style: none;
+    justify-content: right;
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    float: right;
+}
+
+.home {
+    height: 25px;
+    width: auto;
+    background-color: white;
+    border-radius: 5px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border: 0px solid white;
+    box-shadow: 0px 0px 10px 0.85px rgba(255, 255, 255, 0.5);
+    display: none;
+    z-index: 1;
+    position: absolute;
+    font-weight: bold;
+}
+
+li:hover .home {
+    display: block;
+}
+
+.content {
+    position: absolute;
+    color: antiquewhite;
+    top: 40%;
+    left: 15%;
+}
+
+.content .content-links a {
+    text-decoration: none;
+    color: #c75454;
+}
+
+.content .content-links a:hover {
+    color: #c75454;
+}
+
+.content h3 {
+    color: aliceblue;
+    font-size: 2.5rem;
+}
+
+.content h1 {
+    color: #64edb092;
+    font-size: 2.4rem;
+}
+
+.content p {
+    color: aliceblue;
+    font-size: 1rem;
+}
+
+.content-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    color: #860753;
+    ;
+    margin-left: -5%;
+}
+
+.content-links .git a {
+    text-decoration: none;
+}
+
+.content-links i {
+    font-size: 1.2rem;
+}
+
+.content-links .git {
+    height: 30px;
+    width: 30px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 10px 1.85px rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    padding: 5px;
+    padding-left: 6px;
+    border: 0px solid white;
+}
+
+.content-links .git:hover {
+    transform: scale(1.1);
+    transition: transform 0.1s;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0.85px rgb(85, 241, 114);
+}
+
+.content-links .linked-in {
+    height: 30px;
+    width: 30px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 10px 0.85px rgba(255, 255, 255, 0.5);
+    ;
+    border-radius: 50%;
+    padding: 5px;
+    padding-left: 6px;
+    border: 0px solid white;
+}
+
+.content-links .linked-in:hover {
+    transform: scale(1.1);
+    transition: transform 0.1s;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0.85px rgb(89, 169, 240);
+    color: #c13f45;
+}
+
+.content-links .mail {
+    height: 30px;
+    width: 30px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 10px 0.85px rgba(255, 255, 255, 0.5);
+    ;
+    border-radius: 50%;
+    padding: 5px;
+    padding-left: 6px;
+    border: 0px solid white;
+}
+
+.content-links .mail:hover {
+    transform: scale(1.1);
+    transition: transform 0.1s;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0.85px rgb(226, 96, 243);
+    color: #c13f45;
+}
+
+
+/* -----------ABOUT----------- */
+
+#about img {
+    height: 35rem;
+    width: 35rem;
+    margin-top: -5%;
+}
+
+.new {
+    height: 35%;
+    width: 35%;
+    float: right;
+    margin-top: 80px;
+}
+
+#about {
+    padding: 80px 0;
+    color: rgb(251, 250, 249);
+}
+
+.about-1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.row-2 {
+    flex-basis: 55%;
+}
+
+.row-2 p {
+    padding-top: 5%;
+    padding-left: 10%;
+    opacity: 0.9;
+    color: #f6f7f7;
+    transform: none;
+}
+
+.about-content i {
+    color: #5ee5c8;
+}
+
+.about-content ul li {
+    list-style: none;
+    padding-top: 1rem;
+    margin-left: 4.5rem;
+}
+
+.about-content ul li a {
+    padding-left: 1rem;
+}
+
+.about-content button {
+    height: 2rem;
+    width: 10rem;
+    border-radius: 5px;
+    border: 0px solid black;
+    font-size: 1rem;
+    margin-left: 4rem;
+    margin-top: 3rem;
+    box-shadow: 0px 0px 10px 5px rgba(236, 123, 31, 0.925);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.about-content button a {
+    color: #422727;
+    text-decoration: none;
+}
+
+.about-content button:hover {
+    box-shadow: none
+}
+
+
+/* ---------Skills -------------*/
+
+.skill-content {
+    display: flex;
+    margin-left: 15%;
+}
+
+.skill-content .icon {
+    height: 55px;
+    width: 55px;
+    background-color: rgb(247, 143, 24);
+    transform: none;
+    backdrop-filter: blur(2rem);
+    margin-left: 5rem;
+    border-radius: 50%;
+    background: rgba(222, 247, 247, 0.3);
+    box-shadow: 0px 0px 10px 0.85px rgba(62, 247, 241, 0.5);
+    margin-top: 5rem;
+    transform: none;
+}
+
+.skill-content .icon:hover {
+    transform: scale(1.1);
+    transition: transform 0.1s;
+    box-shadow: 0px 0px 10px 0.85px rgb(249, 86, 249);
+}
+
+.skill-content .icon i {
+    font-size: 2.5rem;
+    padding-top: 8px;
+    padding-left: 10px;
+}
+
+.icon i .html {
+    border-radius: 50%;
+}
+
+#skills h1 {
+    color: aliceblue;
+    text-align: center;
+}
+
+#skills img {
+    height: 15%;
+    width: 15%;
+    float: right;
+    margin-top: -30px;
+}
+
+
+/*--------------- PROJECT---------- */
+
+#projects .project-img {
+    height: 15%;
+    width: 15%;
+    margin-top: -130px;
+}
+
+#projects h1 {
+    color: aliceblue;
+    text-align: center;
+    margin-top: 8%;
+}
+
+.card {
+    width: 250px;
+    height: 350px;
+    background-color: rgba(223, 223, 223, 0.85);
+    display: inline-block;
+    border-radius: 5px;
+    border: 0px solid black;
+    margin-left: 5%;
+    margin-top: 8%;
+}
+
+.card-container h4 {
+    font-family: PT Sans;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.card-container p {
+    font-size: smaller;
+    text-align: center;
+    color: #bd699b;
+    font-weight: bold;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: transform 1s;
+    cursor: pointer;
+}
+
+#projects .card img {
+    width: 100%;
+    height: 70%;
+    border-radius: 5px 5px 5px 5px;
+}
+
+
+/* ------------Contact------------ */
+
+.contact-left h1 {
+    color: aliceblue;
+    text-align: center;
+    margin-top: 8%;
+}
+
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 70%;
+}
+
+.social-icon {
+    margin-top: 30px;
+}
+
+.social-icon a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: translateY(-5px);
+}
+
+.social-icon a:hover {
+    color: #c13f8d;
+    transform: translateY(-5px);
+}
+
+form input,
+form textarea {
+    border: 0;
+    width: 50%;
+    outline: none;
+    padding: 15px;
+    margin: 15px 0;
+    color: #f39090;
+    font-size: 18px;
+    border-radius: 6px;
+    display: center;
+    margin-left: 45%;
+}
+
+.contact-right {
+    background: rgba(129, 243, 243, 0.5);
+    backdrop-filter: blur(30px);
+    width: 80%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-left: 10%;
+    border-radius: 15px;
+}
+
+.contact-right img {
+    height: 25rem;
+    width: 25rem;
+    margin-top: 0px;
+    position: absolute;
+}
+
+.contact-right button {
+    height: 2.5rem;
+    width: 10rem;
+    border-radius: 5px;
+    border: 0px solid black;
+    font-size: 1rem;
+    margin-left: 4rem;
+    box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    font-weight: bold;
+    color: #14972e;
+    margin-left: 45%;
+}
+
+.last-text p {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #f6f0d6;
+    font-weight: 300;
+    margin-top: 70px;
+}
